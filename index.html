@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildRight Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #09035c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        #hero {
+            background-image: url('https://images.unsplash.com/photo-1464146072230-91cabc968266?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        #services {
+            background-color: #f4f4f4;
+        }
+        #portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .portfolio-item {
+            width: 30%;
+            margin-bottom: 1rem;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BuildRight Construction</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <h2>Building Your Dreams, One Project at a Time</h2>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Residential Construction</li>
+                <li>Commercial Construction</li>
+                <li>Renovation and Remodeling</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="https://media.istockphoto.com/id/1458002636/photo/construction-workers-in-building-site.jpg?s=1024x1024&w=is&k=20&c=NErjPpsdmN29LZ35JBqAIo-GMuexoWuz_DVrFmBJITE=" alt="Construction site">
+                <p>Commercial Building Project</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://media.istockphoto.com/id/2164305033/photo/happy-project-manager-greeting-a-construction-worker-in-the-building.jpg?s=1024x1024&w=is&k=20&c=OjHCrpMeh2km5sqOQI2EOjlsuibripe9RL0GatcZ_Xw=" alt="Construction workers">
+                <p>Residential Complex</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://media.istockphoto.com/id/1944772735/photo/closeup-of-team-of-industrial-engineers-meeting-analyze-machinery-blueprints-consult-project.jpg?s=1024x1024&w=is&k=20&c=rKvUIGsPp6Wv8ZwmpxE7KWKFqJGsYT66SfAcWZMDfbw=" alt="Blueprint">
+                <p>Custom Home Design</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@buildright.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Construction Ave, Builder City, BC 12345</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 BuildRight Construction. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
